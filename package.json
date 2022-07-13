@@ -2,8 +2,9 @@
   "name": "jest-extended-456-reproduction",
   "main": "index.js",
   "scripts": {
+    "compile": "npx tsc --noEmit -p .",
     "prestart": "npm ci",
-    "start": "npx tsc --noEmit -p ."
+    "start": "npm run compile"
   },
   "engines": {
     "node": "16.13.0",
