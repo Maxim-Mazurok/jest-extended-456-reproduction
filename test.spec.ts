@@ -9,6 +9,6 @@ it("works", () => {
 
   // Assert
   expect(MyClass.prototype.initialize).toHaveBeenCalledBefore(
-    MyClass.prototype.finalize
+    jest.mocked(MyClass.prototype.finalize)
   );
 });
